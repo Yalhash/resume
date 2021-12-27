@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=0.5in]{geometry} % Change margins
+\usepackage{xcolor} % Custom color
+\usepackage{times} % Change font
+\usepackage{nopageno}
+\usepackage{enumitem} % Allow custom itemize bullet character
+
+\usepackage[colorlinks = true,
+            linkcolor  = blue,
+            urlcolor   = blue,
+            citecolor  = blue,
+            anchorcolor= blue]{hyperref} % Links at top
+
+\definecolor{textGray}{RGB}{75, 78, 80}
+\newcommand{\sectionRule}{\textcolor{gray}{\rule{7.27in}{0.02cm}}}
+\newcommand{\sectionTxt}[1]{\noindent\textbf{#1}\\}
+\newcommand{\textDate}[3]{\noindent#1 $|$ #2 $|$ {\color{textGray} #3}}
+\newcommand{\projText}[2]{\noindent#1 $|$ {\color{textGray} #2}}
+
+
+\begin{document}
+    \begin{center}
+        {\huge Yousef Al Hashemi}\\
+        {\normalsize 647.972.2668 $|$ yousefalhashemi20@gmail.com}\\
+        {\normalsize LinkedIn: \href{https://www.linkedin.com/in/yousefalhashemi}{linkedin.com/in/yousefalhashemi} $|$ GitHub: \href{https://github.com/Yalhash}{github.com/Yalhash}}\\
+    \end{center}
+    \sectionTxt{TECHNICAL SKILLS}
+    \sectionRule
+    \begin{small}
+        \begin{itemize}
+            \item Proficient: {\color{textGray}C++, Python, Java, Unix Terminal}
+            \item Exposure: {\color{textGray}C, Bash Scripting, Makefile, Golang, HTML, CSS, JavaScript, Perl, TCL}
+        \end{itemize}
+    \end{small}
+    \sectionTxt{WORK EXPERIENCE}
+    \sectionRule
+
+
+    \textDate{Intel}{Software Engineering PEY Intern}{May 2020 -- Aug 2021}
+    \begin{small}
+        \begin{itemize}
+            \item {\color{textGray} Wrote an internal netlist writer written in C++ which converts internal data structure into hardware code.}
+                \begin{itemize}[label=$\circ$]
+                    \item {\color{textGray} Used to verify the functional correctness of modifications made to the internal data structure.}
+                \end{itemize}
+            \item {\color{textGray} Maintained an analytics service written in Python.}
+                \begin{itemize}[label=$\circ$]
+                    \item {\color{textGray} Brought the service which had been down for months back online.}
+                \end{itemize}
+            \item {\color{textGray} Collaborated on a graph visualization software which took netlist data files and displayed them.}
+                \begin{itemize}[label=$\circ$]
+                    \item {\color{textGray} Allowed users working with the data files to query custom paths and understand their work better.}
+                \end{itemize}
+            \item {\color{textGray} Created a build time script to convert and consolodate legacy XML data into new updated formats.}
+            \item {\color{textGray} Created regression testing infrastructure and unit tests for various flows.}
+        \end{itemize}
+    \end{small}
+
+    \sectionTxt{EDUCATION}
+    \sectionRule
+
+    \textDate{Bachelor of Applied Science, Computer Science}{McMaster University}{Sept 2018 -- present}
+    \begin{small}
+        \begin{itemize}
+            \item Relevant Coursework: {\color{textGray} Data structures and Algorithms, Concurrent Systems, Principles of Programming}
+            \item Current Cumulative GPA: {\color{textGray} 11.5/12}
+        \end{itemize}
+    \end{small}
+
+    \sectionTxt{PROJECT WORK}
+    \sectionRule
+
+
+    \projText{Patent Connect}{Feb 2020 -- Mar 2020}
+    \begin{small}
+        \begin{itemize}
+            
+            \item {\color{textGray} Worked with a group of peers to create a graphical application which created a graph showing how different US Patents referenced eachother.}
+            \item {\color{textGray} The interface was interactive and allowed users to view information of individual patents scraped from Google Patents.}
+            \item {\color{textGray} Was involved in the scraping, database, and testing parts of the project.}
+        \end{itemize}
+    \end{small}
+    \projText{Automated Clipping Channel}{Jun 2019 -- Jul 2019}
+    \begin{small}
+        \begin{itemize}
+            \item {\color{textGray} Wrote a web scraper that finds popular video clips from Twitch.tv (a video game streaming website) and edits them into a 10 minute video.}
+            \item {\color{textGray} Created in Python using Selenium to scrape the dynamic pages, and used ffmpeg to edit the video together with subtitles attached.}
+            \item {\color{textGray} Used to learn about web scraping and automating tasks such as video editing.}
+        \end{itemize}
+    \end{small}
+
+    \medskip % Just push the title to the last page for formatting.
+
+    \projText{Sorting Visualizer}{Feb 2018 -- May 2018}
+    \begin{small}
+        \begin{itemize}
+            \item {\color{textGray} Created a command line tool that creats visualization videos of different sorting algorithms to sort scrambled images.}
+                \begin{itemize}[label=$\circ$]
+                    \item {\color{textGray} Given an image and set of commands, creates mp4 video of images being shuffled and sorted using specified algorithm.}
+                \end{itemize}
+            \item {\color{textGray} Created in C++ using stb\_image library to import images, and ffmpeg based libraries to create and export the video.}
+            \item {\color{textGray} Learned how to implement common sorting algorithms, and when they should be used.}
+                \begin{itemize}[label=$\circ$]
+                    \item {\color{textGray} Implemented Bubble Sort, Quick Sort, Merge Sort, Heap Sort, Counting Sort, and Radix Sort (Base 10)}
+                \end{itemize}
+        \end{itemize}
+    \end{small}
+
+\end{document}
