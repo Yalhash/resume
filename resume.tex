@@ -52,51 +52,53 @@
     \sectionTxt{WORK EXPERIENCE}
     \sectionRule
 
-    \textDate{Intel}{Software Engineer}{July 2023 -- Current}
+    \textDate{Altera (Spun off from Intel in January 2025)}{Software Engineer}{July 2023 -- Current}
     \begin{small}
         \begin{itemize}
             \itemsep0em 
-
-            % Preserve
-            \item {\color{textGray} Implemented design partition preservation features, enabling users to speed up user design iteration time.}
-                \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
-                    \itemsep0em 
-                    \item {\color{textGray} Allows users to save parts of the netlist in recompilations.}
-                    \item {\color{textGray} Coordinated with other teams across flows to ensure compliance with the feature.}
-                    \item {\color{textGray} Defined and executed testing plan for the feature.}
-                \end{itemize}
 
             % PCC
             \item {\color{textGray} Worked on the compiled IP caching feature, enabling users to speed up user design iteration time.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
-                    \item {\color{textGray} Parallelized the flow to start caching in the background of the main process.}
-                    \item {\color{textGray} Introduced flow-level runtime optimizations to reach a 16\% runtime improvement in the flow.}
-                    \item {\color{textGray} Created test plan to measure and address runtime issues in the flow.}
+                    \item {\color{textGray} Introduced flow-level runtime optimizations to reach a 16\% speedup in the flow.}
+                    \item {\color{textGray} Parallelized the cache generation flow adding an additional 20\% speedup on top of previous gains.}
+                    \item {\color{textGray} Created a test plan to drive solving runtime issues in the flow.}
+                    \item {\color{textGray} Polished the feature through vigorous testing and brought it to production ready quality.}
+                \end{itemize}
+
+            % MISC
+            \item {\color{textGray} Reduced RAM usage in GUI use cases by 50\%.}
+                \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
+                    \itemsep0em 
+                    \item {\color{textGray} Found the convoluted notification-based flow which led to memory doubling in the legacy code.}
                 \end{itemize}
 
             % DMS
-            \item {\color{textGray} Owned and developed features for the database management system.}
+            \item {\color{textGray} Owned and extended the database management system.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
-                    \item {\color{textGray} Replaced faulty locking mechanism with a more robust and better tested implementation.}
+                    \item {\color{textGray} Found, diagnosed, and replaced faulty concurrency locking mechanism with a more robust and better tested implementation.}
                     \item {\color{textGray} Improved thread safety and multi-process safety of the system.}
                 \end{itemize}
 
+            % Preserve
+            \item {\color{textGray} Implemented the design partition Preserve feature, enabling users to speed up user design iteration time.}
+                \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
+                    \itemsep0em 
+                    \item {\color{textGray} Coordinated with other teams across flows to ensure compliance with the feature.}
+                    \item {\color{textGray} Defined and executed testing plan for the feature.}
+                \end{itemize}
+
+
             %UNO
-            \item {\color{textGray} Owned and developed features for the internal netlist writer.}
+            \item {\color{textGray} Owned and extended features for the internal netlist writer.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
                     \item {\color{textGray} Updated and expanded the writer to allow the output of scripting languages.}
                     \item {\color{textGray} Directed the development of adding TCL, Python, and VHDL output to the writer.}
                 \end{itemize}
 
-            % MISC
-            \item {\color{textGray} Halved the database memory usage in GUI flows.}
-                \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
-                    \itemsep0em 
-                    \item {\color{textGray} Found the convoluted notification-based flow which led to memory doubling.}
-                \end{itemize}
         \end{itemize}
     \end{small}
 
