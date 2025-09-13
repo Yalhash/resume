@@ -25,34 +25,22 @@
 
 \begin{document}
     \begin{center}
-        {\huge Yousef Al Hashemi}\\
+        {\huge Yousef Al Hashemi}\vspace{0.5em}\\
         {\normalsize 647.972.2668 $|$ yousefalhashemi20@gmail.com}\\
         {\normalsize LinkedIn: \href{https://www.linkedin.com/in/yousefalhashemi}{linkedin.com/in/yousefalhashemi} $|$ GitHub: \href{https://github.com/Yalhash}{github.com/Yalhash}}\\
     \end{center}
-
-    \sectionTxt{EDUCATION}
-    \sectionRule
-
-    \textDate{Bachelor of Applied Science, Computer Science}{McMaster University}{Sept 2018 -- May 2023}
-    \begin{small}
-        \begin{itemize}
-            \itemsep0em 
-            \item Cumulative GPA: {11.5/12}
-            \item Relevant Coursework: {Data structures and Algorithms, Concurrent Systems, Principles of Programming, Databases, Algorithms and Complexity, Intro to Machine Learning, Computer Networks and Security, Operating Systems}
-        \end{itemize}
-    \end{small}
 
     \sectionTxt{TECHNICAL SKILLS}
     \sectionRule \\
 
 
-    {C++20, Python, Java, Typescript, TCL, C, Git, Bash, Linux, SQL, Makefile, HTML, CSS, PERL} \\
+    {C++23, Python, Java, Typescript, TCL, C, Git, Bash, Linux, NestJS, SQL, Makefile, PERL} \\
 
 
     \sectionTxt{WORK EXPERIENCE}
     \sectionRule
 
-    \textDate{Altera (Spun off from Intel in January 2025)}{Software Engineer}{July 2023 -- Current}
+    \textDate{Intel (Altera)}{Software Engineer}{July 2023 -- Current}
     \begin{small}
         \begin{itemize}
             \itemsep0em 
@@ -61,16 +49,18 @@
             \item {Worked on the compiled IP caching feature, enabling users to accelerate users' design iteration time.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
-                    \item {Introduced flow-level runtime optimizations and parallelized cache generation achieving a 40\% speedup in the flow.}
+                    \item {Introduced flow-level runtime optimizations and parallelized cache generation achieving a 40\% speedup in the cached synthesis flow.}
                     \item {Created a testing plan and infrastructure to track and resolve runtime issues in the flow.}
-                    \item {Polished the feature through rigorous testing collaborating with multiple teams and brought it to production-ready quality.}
+                    \item {Polished the feature to production quality through rigorous testing and collaboration with multiple teams.}
                 \end{itemize}
 
             % MISC
-            \item {Reduced RAM usage in GUI use cases by 50\%.}
+            \item {Reduced memory usage in GUI use cases by 50\%.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
-                    \item {Found the convoluted notification-based flow which led to memory doubling in the legacy code.}
+                    \item {The benchmark customer designs saved upwards of 6GB of RAM.}
+                    \item {Stopped the GUI from being unresponsive and frequently freezing.}
+                    \item {Used memory profiling to trace the issue throught a convoluted event-based flow which doubled the memory.}
                 \end{itemize}
 
             % DMS
@@ -78,13 +68,15 @@
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
                     \item {Found, diagnosed, and replaced faulty concurrency locking mechanism with a more robust and better tested implementation.}
-                    \item {Improved thread safety and multi-process safety of the system.}
+                    \item {Improved thread safety and multi-process safety of the system, enabling new multi-process flows.}
                 \end{itemize}
 
             % Preserve
             \item {Implemented the design partition Preserve feature, enabling users to speed up user design iteration time.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
+                    \item {Users can block off sections of their designs which meet design requirements save the compilation results.}
+                    \item {Subsequent compilations with preserved partitions become faster proportional to the amount of the design preserved.}
                     \item {Coordinated with other teams across flows to ensure compliance with the feature.}
                     \item {Defined and executed testing plan for the feature.}
                 \end{itemize}
@@ -94,6 +86,7 @@
             \item {Owned and extended features for the internal netlist writer.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
+                    \item {Enabled several production features, is still in active use, and still extended for new use cases.}
                     \item {Updated and expanded the writer to allow the output of scripting languages.}
                     \item {Directed the development of adding TCL, Python, and VHDL output to the writer.}
                 \end{itemize}
@@ -125,7 +118,7 @@
     \begin{small}
         \begin{itemize}
             \itemsep0em 
-            \item {Wrote an internal netlist writer in C++ which converts internal data structure into hardware code.}
+            \item {Created the internal netlist writer in C++ which converts internal data structure into hardware code.}
                 \begin{itemize}[label=$\circ$,topsep=-5px,partopsep=0px]
                     \itemsep0em 
                     \item {Used to verify the functional correctness of modifications made to the internal data structure.}
@@ -140,16 +133,49 @@
         \end{itemize}
     \end{small}
 
+    \newpage
+
     \sectionTxt{PROJECT WORK}
     \sectionRule
+    
+    \projText{BlockFund}{July 2025 -- Current}
+    \begin{small}
+        \begin{itemize}
+            \itemsep0em 
+            \item {Created }
+            \item {Created the code to solve pathfinding, SLAM, frontier exploration, and serial communication with the drive train. }
+        \end{itemize}
+    \end{small}
 
     \projText{RoomE - Capstone}{Sept 2021 -- Mar 2022}
     \begin{small}
         \begin{itemize}
             \itemsep0em 
-            \item {Worked with a group of peers to create a robot which would automatically explore indoor environments, create maps of them using LIDAR, and upload them to a website where they could be viewed.}
-            \item {Created the code to solve pathfinding, SLAM, frontier exploration, and serial communication with the drive train. }
+            \item {Worked in a team of peers to create an autonomous robot which explores indoor environments, creates maps of them using LIDAR, and uploads them to a website where they could be viewed.}
+            \item {Created the code to solve pathfinding, SLAM, frontier exploration, create the data model and representation, and serial communication with the drive train. }
         \end{itemize}
     \end{small}
+
+    \projText{Automated Clipping Channel}{Jun 2019 -- Jul 2019}
+    \begin{small}
+        \begin{itemize}
+            \itemsep0em
+            \item {\color{textGray} Wrote a web scraper that finds popular video clips from Twitch.tv and edits them into a 10 minute video.}
+            \item {\color{textGray} Created in Python using Selenium to scrape the dynamic pages, and used FFMPEG to edit the video together.}
+        \end{itemize}
+    \end{small}
+
+    \sectionTxt{EDUCATION}
+    \sectionRule
+
+    \textDate{Bachelor of Applied Science, Computer Science}{McMaster University}{Sept 2018 -- May 2023}
+    \begin{small}
+        \begin{itemize}
+            \itemsep0em 
+            \item Cumulative GPA: {11.5/12}
+            \item Relevant Coursework: {Data structures and Algorithms, Concurrent Systems, Principles of Programming, Databases, Algorithms and Complexity, Intro to Machine Learning, Computer Networks and Security, Operating Systems}
+        \end{itemize}
+    \end{small}
+
 
 \end{document}
