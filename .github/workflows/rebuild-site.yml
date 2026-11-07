@@ -1,0 +1,20 @@
+name: Rebuild website
+
+on:
+  push:
+    branches: [main]
+    paths: [resume.pdf]   # only when the PDF itself changes
+  workflow_dispatch:
+
+jobs:
+  notify-site:
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger site rebuild
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+        run: |
+          gh api repos/Yalhash/Yalhash.github.io/dispatches \
+            -f event_type=resume-updated \
+            -f "client_payload[sha]=${{ github.sha }}"
